@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+}
+
+header {
+    font-family: sans-serif;
+    background-color: #cc2c3a;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 5vw;
+    width: 15vw;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    color: white;
+}
+
+nav li a {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+nav li a:hover {
+    color: rgb(184, 180, 180);
+}
+
+#img1 {
+    width: 100%;
+    margin-top: 0%;
+}
+
+main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+#article1 {
+    flex: 1 50vw;
+    margin: 8px;
+}
+
+#article2 {
+    flex: 2 50vw;
+    margin: 8px;
+}
+
+#article3 {
+    margin: 8px;
+}
+
+#modelX {
+    width: 200px;
+    height: 20vw;
+}
+
+#aboutElon {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+#elonMuskImg1 {
+    width: 30vw;
+    margin-bottom: 10px;
+}
+#elonMuskImg2 {
+    width: 30vw;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #cc2c3a;
+    padding: 1vw;
+}
