@@ -4,7 +4,7 @@
 
 header {
     font-family: sans-serif;
-    background-color: #cc2c3a;
+    background-color: #a81723;
     padding: 0px;
 }
 
@@ -23,7 +23,6 @@ nav img {
 nav a {
     text-decoration: none;
     font-size: 32px;
-    color: white;
 }
 
 nav li {
@@ -31,7 +30,6 @@ nav li {
     display: inline-block;
     margin-right: 1vw;
     margin-left: 1vw;
-    color: white;
 }
 
 nav li a {
@@ -55,35 +53,37 @@ main {
     font-size: 18px;
 }
 
-.container1 {
+.container {
     display: flex;
     flex-direction: row;
     margin: 20px;
 }
 
-.container2 {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
+.articles {
+    margin: 8px;
 }
-
 #article1 {
     flex: 1 50vw;
-    margin: 8px;
 }
 
 #article2 {
     flex: 2 50vw;
-    margin: 8px;
 }
 
-#article3 {
-    margin: 8px;
+#article5 {
+    flex: 1 50vw;
 }
+
+#article6 {
+    flex: 2 50vw;
+}
+
+
 
 #modelX {
     width: 100%;
-    height: 30vw;
+    height: 40vw;
+    margin-bottom: 0px;
 }
 
 #aboutElon {
@@ -96,12 +96,13 @@ main {
     width: 30vw;
     margin-bottom: 10px;
 }
+
 #elonMuskImg2 {
     width: 30vw;
     margin-top: 10px;
 }
 
 footer {
-    background-color: #cc2c3a;
+    background-color: #a81723;
     padding: 1vw;
 }
