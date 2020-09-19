@@ -78,6 +78,11 @@ main {
     flex: 2 50vw;
 }
 
+.slidesShow{
+    max-width: 100%;
+    position: relative;
+    margin: 0px;
+}
 
 
 #modelXImg {
