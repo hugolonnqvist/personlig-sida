@@ -84,6 +84,21 @@ main {
     margin: 0px;
 }
 
+.images {
+    height: 45vw;
+}
+
+.slides {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes {
+    form {opacity: .6;}
+    to {opacity: 1;}
+}
 
 #modelXImg {
     width: 100%;
@@ -94,7 +109,14 @@ main {
 #aboutElon {
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin: 12px;
+}
+
+#aboutElonArticle {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #elonMuskImg1 {
