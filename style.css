@@ -1,5 +1,6 @@
-* {
+body {
     margin: 0px;
+    background-color: rgb(230, 230, 230);
 }
 
 header {
@@ -15,28 +16,23 @@ nav {
 }
 
 nav img {
-    height: 3.8vw;
-    width: 4.8vw;
-    margin: 6px;
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 32px;
+    height: 50px;
+    width: 60px;
+    margin: 8px;
 }
 
 nav li {
     list-style: none;
     display: inline-block;
-    margin-right: 1vw;
-    margin-left: 1vw;
+    margin-right: 18px;
+    margin-left: 18px;
 }
 
 nav li a {
     font-family: sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 20px;
 }
 
 nav li a:hover {
@@ -59,26 +55,17 @@ main {
     margin: 20px;
 }
 
-.articles {
-    margin: 8px;
-}
-#article1 {
+.collumn1 {
     flex: 1 50vw;
+    margin-right: 8px;
 }
 
-#article2 {
+.collumn2 {
     flex: 2 50vw;
+    margin-left: 8px;
 }
 
-#article5 {
-    flex: 1 50vw;
-}
-
-#article6 {
-    flex: 2 50vw;
-}
-
-.slidesShow{
+.slidesShow {
     max-width: 100%;
     position: relative;
     margin: 0px;
@@ -95,41 +82,73 @@ main {
     animation-duration: 3s;
 }
 
-@keyframes {
-    form {opacity: .6;}
-    to {opacity: 1;}
+@keyframes fade {
+    from {
+        opacity: .6;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-#modelXImg {
-    width: 100%;
-    height: 40vw;
-    margin-bottom: 0px;
-}
-
-#aboutElon {
-    display: flex;
-    flex-direction: row;
+.button {
+    cursor: pointer;
+    position: relative;
+    font-size: 30px;
+    bottom: 35px;
     margin: 12px;
 }
 
-#aboutElonArticle {
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.button:hover {
+    color: rgb(114, 111, 111);
 }
 
-#elonMuskImg1 {
-    width: 30vw;
-    margin-bottom: 10px;
+#back {
+    left: 40%; 
 }
 
-#elonMuskImg2 {
-    width: 30vw;
-    margin-top: 10px;
+#next {
+    left: 51%;
+}
+
+.imgText {
+    font-size: 24px;
+    position: relative;
+    left: 45vw;
+}
+
+
+#aboutElon {
+    padding: 12px;
+}
+
+.textAboutElon {
+    margin: 20px;
+}
+
+#memeText {
+    font-size: 32px;
+    text-align: center;
+    border-bottom: solid ; 
+}
+
+.elonImages {
+    width: 33vw;
+    margin: 6px;
+    height: 20vw;
+}
+
+.elonMemeImages {
+    width: 31vw;
+    margin: 6px;
+    height: 20vw;
+}
+
+.elonImages:hover {
+    height: 21vw;
 }
 
 footer {
     background-color: #a81723;
-    padding: 1vw;
+    padding: 10px;
 }
