@@ -24,8 +24,8 @@ nav img {
 nav li {
     list-style: none;
     display: inline-block;
-    margin-right: 18px;
-    margin-left: 18px;
+    margin-right: 16px;
+    margin-left: 16px;
 }
 
 nav li a {
@@ -33,6 +33,7 @@ nav li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    font-size: 1.2em;
 }
 
 nav li a:hover {
@@ -46,7 +47,7 @@ nav li a:hover {
 
 main {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 1.2vw;
 }
 
 .container {
@@ -94,8 +95,8 @@ main {
 .button {
     cursor: pointer;
     position: relative;
-    font-size: 30px;
-    bottom: 35px;
+    font-size: 24px;
+    bottom: 31px;
     margin: 12px;
 }
 
@@ -104,11 +105,11 @@ main {
 }
 
 #back {
-    left: 40%; 
+    left: 40.5%;
 }
 
 #next {
-    left: 51%;
+    left: 51.2%;
 }
 
 .imgText {
@@ -117,35 +118,43 @@ main {
     left: 45vw;
 }
 
-
 #aboutElon {
     padding: 12px;
 }
 
 .textAboutElon {
-    margin: 20px;
+    margin: 1vw;
 }
 
 #memeText {
     font-size: 32px;
     text-align: center;
-    border-bottom: solid ; 
+    border-bottom: dashed;
 }
 
-.elonImages {
-    width: 33vw;
-    margin: 6px;
+.item1 {
+    flex: 1 30%;
+    width: 30vw;
+    height: 20vw;
+    margin-right: 1vw;
+
+}
+
+.item2 {
+    flex: 2 30%;
+    width: 30vw;
+    height: 20vw;
+    margin-right: 1vw;
+}
+
+.item3 {
+    flex: 3 30%;
+    width: 30vw;
     height: 20vw;
 }
 
-.elonMemeImages {
-    width: 31vw;
-    margin: 6px;
-    height: 20vw;
-}
-
-.elonImages:hover {
-    height: 21vw;
+.item1:hover, .item2:hover, .item3:hover {
+    box-shadow: 0px 0px 12px 4px black;
 }
 
 footer {

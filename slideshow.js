@@ -2,6 +2,7 @@ let index = 1;
 
 slideShow(index);
 
+//Function for the changing the image when the buttons are pressed
 function nextSlide(n) {
     slideShow(index += n);
 }
@@ -25,5 +26,4 @@ function slideShow(n) {
         index = 1;
     }
     slides[index - 1].style.display = "block";
-
 }
