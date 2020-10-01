@@ -223,6 +223,6 @@ footer p {
     height: 20vw;
 }
 
-.item1:hover, .item2:hover, .item3:hover {
-    box-shadow: 0px 0px 12px 4px black;
+.item1, .item2, .item3, .col1, .col2 {
+    box-shadow: 4px 4px 8px 6px black;
 }
