@@ -1,12 +1,13 @@
 body {
     margin: 0px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(61, 60, 60);
+    color: rgb(236, 236, 236);
+    line-height: 1.8vw;
 }
 
 header {
     font-family: sans-serif;
     background-color: #a81723;
-    padding: 0px;
 }
 
 nav {
@@ -16,12 +17,13 @@ nav {
 }
 
 nav img {
-    height: 50px;
-    width: 60px;
+    height: 3.8vw;
+    width: 4.8vw;
     margin: 8px;
 }
 
 nav li {
+    display: flex;
     list-style: none;
     display: inline-block;
     margin-right: 16px;
@@ -32,8 +34,7 @@ nav li a {
     font-family: sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 20px;
-    font-size: 1.2em;
+    font-size: 1.3vw;
 }
 
 nav li a:hover {
@@ -43,11 +44,14 @@ nav li a:hover {
 #modelSImg {
     width: 100%;
     margin-top: 0%;
+    box-shadow: 4px 4px 12px 12px black;
 }
 
 main {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2vw;
+    text-align: justify;
+    margin: 5vw;
 }
 
 .container {
@@ -58,12 +62,12 @@ main {
 
 .collumn1 {
     flex: 1 50vw;
-    margin-right: 8px;
+    margin-right: 14px;
 }
 
 .collumn2 {
     flex: 2 50vw;
-    margin-left: 8px;
+    margin-left: 14px;
 }
 
 .slidesShow {
@@ -73,31 +77,36 @@ main {
 }
 
 .images {
-    height: 45vw;
+    height: 40vw;
 }
 
 .slides {
+    box-shadow: 4px 4px 12px 12px black;
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 2.5s;
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
 }
 
 @keyframes fade {
     from {
-        opacity: .6;
+        opacity: .4 ;
     }
     to {
         opacity: 1;
     }
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
 .button {
-    cursor: pointer;
     position: relative;
-    font-size: 24px;
-    bottom: 31px;
+    font-size: 1.4vw;
     margin: 12px;
+    bottom: 3vw;
 }
 
 .button:hover {
@@ -105,21 +114,75 @@ main {
 }
 
 #back {
-    left: 40.5%;
+    right: 4vw;
 }
 
 #next {
-    left: 51.2%;
+    left: 4vw;
 }
 
 .imgText {
-    font-size: 24px;
     position: relative;
-    left: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    padding: 8px;
 }
+
+footer {
+    background-color: #a81723;
+    padding: 0.4vw;
+}
+
+footer p {
+    font-size: 1.2vw;
+    margin: 1vw;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    nav li a {
+        font-size: 2vw;
+    }
+    nav img {
+        margin: 8px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .button {
+        bottom: 4.4vw;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .button {
+        bottom: 6.3vw;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .button {
+        bottom: 6.8vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .button {
+        bottom: 8vw;
+    }
+}
+
 
 #aboutElon {
     padding: 12px;
+}
+
+.memeContainer {
+    display: flex;
+    flex-flow: row;
 }
 
 .textAboutElon {
@@ -127,37 +190,39 @@ main {
 }
 
 #memeText {
-    font-size: 32px;
+    font-size: 3vw;
     text-align: center;
-    border-bottom: dashed;
+}
+
+.col1 {
+    flex: 1 50vw;
+    height: 20vw;
+    margin-right: 1vw;
+}
+
+.col2 {
+    flex: 2 50vw;
+    height: 20vw;
+    margin-left: 1vw;
 }
 
 .item1 {
-    flex: 1 30%;
-    width: 30vw;
+    flex: 1 30vw;
     height: 20vw;
     margin-right: 1vw;
-
 }
 
 .item2 {
-    flex: 2 30%;
-    width: 30vw;
+    flex: 2 30vw;
     height: 20vw;
     margin-right: 1vw;
 }
 
 .item3 {
-    flex: 3 30%;
-    width: 30vw;
+    flex: 3 30vw;
     height: 20vw;
 }
 
 .item1:hover, .item2:hover, .item3:hover {
     box-shadow: 0px 0px 12px 4px black;
-}
-
-footer {
-    background-color: #a81723;
-    padding: 10px;
 }

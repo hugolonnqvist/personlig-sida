@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="slideshow.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Personlig-sida</title>
 </head>
 
@@ -16,14 +17,16 @@
                 alt="Bild på Teslas loga">
             <ul>
                 <li>
-                    <a href="about.html">About Elon</a>
-                </li>
-                <li>
                     <a href="#article1">Tesla & SpaceX</a>
                 </li>
-
+                <li>
+                    <a href="#article3">Entrepenören</a>
+                </li>
                 <li>
                     <a href="#article5">Olika modeller</a>
+                </li>
+                <li>
+                    <a href="about.html">Mer om Elon</a>
                 </li>
             </ul>
         </nav>
@@ -54,7 +57,7 @@
             </article-2>
         </div>
         <div class="container">
-            <article-3>
+            <article-3 id="article3">
                 <h2>Entrepenören</h2>
                 <p>Elon Musk är en framgångsrik affärsman som driver ett flertal företag där det kändaste är Tesla. Han
                     driver även Space X som har som mål att kolonisera Mars. Ett företag som många inte vet att Elon var
@@ -66,7 +69,7 @@
             <div class="slides">
                 <img class="images" src="./images/2020-tesla-model-x-mmp-1-1579127420.jpg"
                     alt="Bild på teslas bil model X" style="width: 100%;">
-                <a class="imgText">Model x</a>
+                <a class="imgText">Model X</a>
             </div>
             <div class="slides">
                 <img class="images" src="./images/roadster-social.jpg" alt="Bild på teslas bil Roadster"
@@ -77,11 +80,12 @@
                 <img class="images" src="images/tesla-y.jpg" alt="Bild på teslas bil Model Y" style="width: 100%;">
                 <a class="imgText">Model Y</a>
             </div>
-
-            <a class="button" id="back" onclick="nextSlide(0)">&#10094;</a>
-            <a class="button" id="next" onclick="nextSlide(1)">&#10095;</a>
-
+            <div class="buttons">
+                <a class="button" id="back" onclick="nextSlide(0)">&#10094;</a>
+                <a class="button" id="next" onclick="nextSlide(1)">&#10095;</a>
+            </div>
         </div>
+
         <div>
             <span style="text-align: center;"></span>
             <span></span>
@@ -121,7 +125,7 @@
         </div>
     </main>
     <footer>
-        <p>Copyright Hugo Lönnqvist Österberg AB</p>
+        <p>Copyright Hugo Lönnqvist Österberg</p>
     </footer>
 </body>
 
